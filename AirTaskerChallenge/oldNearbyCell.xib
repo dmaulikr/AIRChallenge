@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="9dy-5g-Nej" customClass="NearbyCell" customModule="AirTaskerChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9dy-5g-Nej" id="yXf-Sy-iDN">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jbk-Xu-RAK">
+                        <rect key="frame" x="10" y="10" width="366" height="308.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l6B-DC-FYN">
+                                <rect key="frame" x="0.0" y="0.0" width="308" height="308.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Qhk-zN-rm4"/>
+                                    <constraint firstAttribute="width" secondItem="l6B-DC-FYN" secondAttribute="height" multiplier="1:1" id="luS-SO-HkW"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GKl-LE-pjx">
+                                <rect key="frame" x="318" y="0.0" width="48" height="308.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Db-fm-J75">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="92.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiO-2M-9Wx">
+                                        <rect key="frame" x="0.0" y="92.5" width="48" height="92.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{profileName} commented on {taskName}" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfE-3f-lxd">
+                                        <rect key="frame" x="0.0" y="185" width="48" height="123.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xiO-2M-9Wx" firstAttribute="height" secondItem="9Db-fm-J75" secondAttribute="height" id="3Ki-tn-dSe"/>
+                                    <constraint firstItem="cfE-3f-lxd" firstAttribute="height" secondItem="GKl-LE-pjx" secondAttribute="height" multiplier="0.4" id="UtX-5J-Vzd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jbk-Xu-RAK" firstAttribute="top" secondItem="yXf-Sy-iDN" secondAttribute="top" constant="10" id="Y9Z-Ud-ELH"/>
+                    <constraint firstItem="Jbk-Xu-RAK" firstAttribute="leading" secondItem="yXf-Sy-iDN" secondAttribute="leading" constant="10" id="b13-sR-tHn"/>
+                    <constraint firstAttribute="trailing" secondItem="Jbk-Xu-RAK" secondAttribute="trailing" constant="10" id="sOl-Up-Un1"/>
+                    <constraint firstAttribute="bottom" secondItem="Jbk-Xu-RAK" secondAttribute="bottom" constant="10" id="wKf-pU-dbe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="l6B-DC-FYN" id="tyZ-Qc-iPt"/>
+                <outlet property="bodyLabel" destination="cfE-3f-lxd" id="7fP-9q-NrN"/>
+                <outlet property="subTitleLabel" destination="xiO-2M-9Wx" id="jLb-qT-unK"/>
+                <outlet property="titleLabel" destination="9Db-fm-J75" id="R3Y-tN-kly"/>
+            </connections>
+            <point key="canvasLocation" x="-27" y="-53"/>
+        </tableViewCell>
+    </objects>
+</document>

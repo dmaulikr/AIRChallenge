@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07F2EAD032FAEC6AE4C1D45F /* Pods_AirTaskerChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B45F8A5FAD8C7888D4DFD8 /* Pods_AirTaskerChallenge.framework */; };
+		24EDBECF1EE0EF1B007C9D74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EDBECE1EE0EF1B007C9D74 /* AppDelegate.swift */; };
+		24EDBED11EE0EF1B007C9D74 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EDBED01EE0EF1B007C9D74 /* LocationViewController.swift */; };
+		24EDBED41EE0EF1B007C9D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EDBED21EE0EF1B007C9D74 /* Main.storyboard */; };
+		24EDBED61EE0EF1B007C9D74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24EDBED51EE0EF1B007C9D74 /* Assets.xcassets */; };
+		24EDBED91EE0EF1B007C9D74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24EDBED71EE0EF1B007C9D74 /* LaunchScreen.storyboard */; };
+		24EDBEE41EE0EF1B007C9D74 /* AirTaskerChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EDBEE31EE0EF1B007C9D74 /* AirTaskerChallengeTests.swift */; };
+		24EDBEEF1EE0EF1B007C9D74 /* AirTaskerChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EDBEEE1EE0EF1B007C9D74 /* AirTaskerChallengeUITests.swift */; };
+		24EDBEFD1EE0F225007C9D74 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EDBEFC1EE0F225007C9D74 /* NearbyViewController.swift */; };
+		24EDBF001EE2B3C4007C9D74 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EDBEFF1EE2B3C4007C9D74 /* Location.swift */; };
+		24EDBF021EE2B80E007C9D74 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EDBF011EE2B80E007C9D74 /* Activity.swift */; };
+		24EDBF071EE2BD43007C9D74 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EDBF061EE2BD43007C9D74 /* NetworkManager.swift */; };
+		24F32CC41EE2C239001B894A /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F32CC31EE2C239001B894A /* LocationViewModel.swift */; };
+		24F32CC71EE2C25A001B894A /* NearbyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F32CC61EE2C25A001B894A /* NearbyViewModel.swift */; };
+		24F32CC91EE2C3FC001B894A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F32CC81EE2C3FC001B894A /* Utilities.swift */; };
+		24F32CCB1EE2C7F0001B894A /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F32CCA1EE2C7F0001B894A /* CellRepresentable.swift */; };
+		24F32CCE1EE2CA18001B894A /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F32CCD1EE2CA18001B894A /* LocationCell.swift */; };
+		24F32CD01EE2CA21001B894A /* NearbyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F32CCF1EE2CA21001B894A /* NearbyCell.swift */; };
+		24F32CD41EE2CA38001B894A /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F32CD31EE2CA38001B894A /* LocationCell.xib */; };
+		24F32CDA1EE2CB37001B894A /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F32CD91EE2CB37001B894A /* Runner.swift */; };
+		24F32CDC1EE2F74F001B894A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F32CDB1EE2F74F001B894A /* Task.swift */; };
+		24F32CDE1EE3C109001B894A /* NearbyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F32CDD1EE3C109001B894A /* NearbyCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24EDBEE01EE0EF1B007C9D74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24EDBEC31EE0EF1B007C9D74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24EDBECA1EE0EF1B007C9D74;
+			remoteInfo = AirTaskerChallenge;
+		};
+		24EDBEEB1EE0EF1B007C9D74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24EDBEC31EE0EF1B007C9D74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24EDBECA1EE0EF1B007C9D74;
+			remoteInfo = AirTaskerChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09B45F8A5FAD8C7888D4DFD8 /* Pods_AirTaskerChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirTaskerChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EDBECB1EE0EF1B007C9D74 /* AirTaskerChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirTaskerChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EDBECE1EE0EF1B007C9D74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24EDBED01EE0EF1B007C9D74 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		24EDBED31EE0EF1B007C9D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24EDBED51EE0EF1B007C9D74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24EDBED81EE0EF1B007C9D74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24EDBEDA1EE0EF1B007C9D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EDBEDF1EE0EF1B007C9D74 /* AirTaskerChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirTaskerChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EDBEE31EE0EF1B007C9D74 /* AirTaskerChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTaskerChallengeTests.swift; sourceTree = "<group>"; };
+		24EDBEE51EE0EF1B007C9D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EDBEEA1EE0EF1B007C9D74 /* AirTaskerChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirTaskerChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EDBEEE1EE0EF1B007C9D74 /* AirTaskerChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTaskerChallengeUITests.swift; sourceTree = "<group>"; };
+		24EDBEF01EE0EF1B007C9D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24EDBEFC1EE0F225007C9D74 /* NearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
+		24EDBEFF1EE2B3C4007C9D74 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		24EDBF011EE2B80E007C9D74 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		24EDBF061EE2BD43007C9D74 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		24F32CC31EE2C239001B894A /* LocationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		24F32CC61EE2C25A001B894A /* NearbyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyViewModel.swift; sourceTree = "<group>"; };
+		24F32CC81EE2C3FC001B894A /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		24F32CCA1EE2C7F0001B894A /* CellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
+		24F32CCD1EE2CA18001B894A /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		24F32CCF1EE2CA21001B894A /* NearbyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyCell.swift; sourceTree = "<group>"; };
+		24F32CD31EE2CA38001B894A /* LocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
+		24F32CD91EE2CB37001B894A /* Runner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
+		24F32CDB1EE2F74F001B894A /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		24F32CDD1EE3C109001B894A /* NearbyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyCell.xib; sourceTree = "<group>"; };
+		6C95FE5E8F34AA6FA2D5E7AA /* Pods-AirTaskerChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirTaskerChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirTaskerChallenge/Pods-AirTaskerChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		868EAF51E79ADD863B88C7C1 /* Pods-AirTaskerChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirTaskerChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirTaskerChallenge/Pods-AirTaskerChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24EDBEC81EE0EF1B007C9D74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F2EAD032FAEC6AE4C1D45F /* Pods_AirTaskerChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EDBEDC1EE0EF1B007C9D74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EDBEE71EE0EF1B007C9D74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FDFE0FD19FCFD7623E99BE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				868EAF51E79ADD863B88C7C1 /* Pods-AirTaskerChallenge.debug.xcconfig */,
+				6C95FE5E8F34AA6FA2D5E7AA /* Pods-AirTaskerChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		24EDBEC21EE0EF1B007C9D74 = {
+			isa = PBXGroup;
+			children = (
+				24EDBECD1EE0EF1B007C9D74 /* AirTaskerChallenge */,
+				24EDBEE21EE0EF1B007C9D74 /* AirTaskerChallengeTests */,
+				24EDBEED1EE0EF1B007C9D74 /* AirTaskerChallengeUITests */,
+				24EDBECC1EE0EF1B007C9D74 /* Products */,
+				0FDFE0FD19FCFD7623E99BE0 /* Pods */,
+				4A594579A5A8717F4C3C1701 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24EDBECC1EE0EF1B007C9D74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24EDBECB1EE0EF1B007C9D74 /* AirTaskerChallenge.app */,
+				24EDBEDF1EE0EF1B007C9D74 /* AirTaskerChallengeTests.xctest */,
+				24EDBEEA1EE0EF1B007C9D74 /* AirTaskerChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24EDBECD1EE0EF1B007C9D74 /* AirTaskerChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				24F32CCC1EE2CA09001B894A /* View */,
+				24EDBF051EE2BD32007C9D74 /* Manager */,
+				24EDBEFE1EE2B376007C9D74 /* Model */,
+				24F32CC51EE2C242001B894A /* ViewModel */,
+				24EDBECE1EE0EF1B007C9D74 /* AppDelegate.swift */,
+				24EDBED01EE0EF1B007C9D74 /* LocationViewController.swift */,
+				24EDBEFC1EE0F225007C9D74 /* NearbyViewController.swift */,
+				24EDBED21EE0EF1B007C9D74 /* Main.storyboard */,
+				24EDBED51EE0EF1B007C9D74 /* Assets.xcassets */,
+				24EDBED71EE0EF1B007C9D74 /* LaunchScreen.storyboard */,
+				24EDBEDA1EE0EF1B007C9D74 /* Info.plist */,
+			);
+			path = AirTaskerChallenge;
+			sourceTree = "<group>";
+		};
+		24EDBEE21EE0EF1B007C9D74 /* AirTaskerChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				24EDBEE31EE0EF1B007C9D74 /* AirTaskerChallengeTests.swift */,
+				24EDBEE51EE0EF1B007C9D74 /* Info.plist */,
+			);
+			path = AirTaskerChallengeTests;
+			sourceTree = "<group>";
+		};
+		24EDBEED1EE0EF1B007C9D74 /* AirTaskerChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24EDBEEE1EE0EF1B007C9D74 /* AirTaskerChallengeUITests.swift */,
+				24EDBEF01EE0EF1B007C9D74 /* Info.plist */,
+			);
+			path = AirTaskerChallengeUITests;
+			sourceTree = "<group>";
+		};
+		24EDBEFE1EE2B376007C9D74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24EDBEFF1EE2B3C4007C9D74 /* Location.swift */,
+				24F32CD91EE2CB37001B894A /* Runner.swift */,
+				24F32CDB1EE2F74F001B894A /* Task.swift */,
+				24EDBF011EE2B80E007C9D74 /* Activity.swift */,
+				24F32CCA1EE2C7F0001B894A /* CellRepresentable.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		24EDBF051EE2BD32007C9D74 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				24F32CC81EE2C3FC001B894A /* Utilities.swift */,
+				24EDBF061EE2BD43007C9D74 /* NetworkManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		24F32CC51EE2C242001B894A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				24F32CC31EE2C239001B894A /* LocationViewModel.swift */,
+				24F32CC61EE2C25A001B894A /* NearbyViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		24F32CCC1EE2CA09001B894A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24F32CCD1EE2CA18001B894A /* LocationCell.swift */,
+				24F32CD31EE2CA38001B894A /* LocationCell.xib */,
+				24F32CCF1EE2CA21001B894A /* NearbyCell.swift */,
+				24F32CDD1EE3C109001B894A /* NearbyCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4A594579A5A8717F4C3C1701 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09B45F8A5FAD8C7888D4DFD8 /* Pods_AirTaskerChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24EDBECA1EE0EF1B007C9D74 /* AirTaskerChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EDBEF31EE0EF1B007C9D74 /* Build configuration list for PBXNativeTarget "AirTaskerChallenge" */;
+			buildPhases = (
+				A28833130DD7DEEED954AD84 /* [CP] Check Pods Manifest.lock */,
+				24EDBEC71EE0EF1B007C9D74 /* Sources */,
+				24EDBEC81EE0EF1B007C9D74 /* Frameworks */,
+				24EDBEC91EE0EF1B007C9D74 /* Resources */,
+				1EC13915649AA3EED5798E7E /* [CP] Embed Pods Frameworks */,
+				4732C03DB33537AF180E4FA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirTaskerChallenge;
+			productName = AirTaskerChallenge;
+			productReference = 24EDBECB1EE0EF1B007C9D74 /* AirTaskerChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24EDBEDE1EE0EF1B007C9D74 /* AirTaskerChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EDBEF61EE0EF1B007C9D74 /* Build configuration list for PBXNativeTarget "AirTaskerChallengeTests" */;
+			buildPhases = (
+				24EDBEDB1EE0EF1B007C9D74 /* Sources */,
+				24EDBEDC1EE0EF1B007C9D74 /* Frameworks */,
+				24EDBEDD1EE0EF1B007C9D74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24EDBEE11EE0EF1B007C9D74 /* PBXTargetDependency */,
+			);
+			name = AirTaskerChallengeTests;
+			productName = AirTaskerChallengeTests;
+			productReference = 24EDBEDF1EE0EF1B007C9D74 /* AirTaskerChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24EDBEE91EE0EF1B007C9D74 /* AirTaskerChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24EDBEF91EE0EF1B007C9D74 /* Build configuration list for PBXNativeTarget "AirTaskerChallengeUITests" */;
+			buildPhases = (
+				24EDBEE61EE0EF1B007C9D74 /* Sources */,
+				24EDBEE71EE0EF1B007C9D74 /* Frameworks */,
+				24EDBEE81EE0EF1B007C9D74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24EDBEEC1EE0EF1B007C9D74 /* PBXTargetDependency */,
+			);
+			name = AirTaskerChallengeUITests;
+			productName = AirTaskerChallengeUITests;
+			productReference = 24EDBEEA1EE0EF1B007C9D74 /* AirTaskerChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24EDBEC31EE0EF1B007C9D74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = JINGLUO;
+				TargetAttributes = {
+					24EDBECA1EE0EF1B007C9D74 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JFT62W5LA3;
+						ProvisioningStyle = Automatic;
+					};
+					24EDBEDE1EE0EF1B007C9D74 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 24EDBECA1EE0EF1B007C9D74;
+					};
+					24EDBEE91EE0EF1B007C9D74 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 24EDBECA1EE0EF1B007C9D74;
+					};
+				};
+			};
+			buildConfigurationList = 24EDBEC61EE0EF1B007C9D74 /* Build configuration list for PBXProject "AirTaskerChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24EDBEC21EE0EF1B007C9D74;
+			productRefGroup = 24EDBECC1EE0EF1B007C9D74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24EDBECA1EE0EF1B007C9D74 /* AirTaskerChallenge */,
+				24EDBEDE1EE0EF1B007C9D74 /* AirTaskerChallengeTests */,
+				24EDBEE91EE0EF1B007C9D74 /* AirTaskerChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24EDBEC91EE0EF1B007C9D74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EDBED91EE0EF1B007C9D74 /* LaunchScreen.storyboard in Resources */,
+				24EDBED61EE0EF1B007C9D74 /* Assets.xcassets in Resources */,
+				24F32CD41EE2CA38001B894A /* LocationCell.xib in Resources */,
+				24F32CDE1EE3C109001B894A /* NearbyCell.xib in Resources */,
+				24EDBED41EE0EF1B007C9D74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EDBEDD1EE0EF1B007C9D74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EDBEE81EE0EF1B007C9D74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC13915649AA3EED5798E7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirTaskerChallenge/Pods-AirTaskerChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4732C03DB33537AF180E4FA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirTaskerChallenge/Pods-AirTaskerChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A28833130DD7DEEED954AD84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24EDBEC71EE0EF1B007C9D74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EDBF001EE2B3C4007C9D74 /* Location.swift in Sources */,
+				24EDBED11EE0EF1B007C9D74 /* LocationViewController.swift in Sources */,
+				24EDBF071EE2BD43007C9D74 /* NetworkManager.swift in Sources */,
+				24EDBF021EE2B80E007C9D74 /* Activity.swift in Sources */,
+				24F32CCB1EE2C7F0001B894A /* CellRepresentable.swift in Sources */,
+				24F32CC41EE2C239001B894A /* LocationViewModel.swift in Sources */,
+				24F32CCE1EE2CA18001B894A /* LocationCell.swift in Sources */,
+				24F32CDC1EE2F74F001B894A /* Task.swift in Sources */,
+				24F32CC71EE2C25A001B894A /* NearbyViewModel.swift in Sources */,
+				24F32CC91EE2C3FC001B894A /* Utilities.swift in Sources */,
+				24F32CD01EE2CA21001B894A /* NearbyCell.swift in Sources */,
+				24EDBECF1EE0EF1B007C9D74 /* AppDelegate.swift in Sources */,
+				24EDBEFD1EE0F225007C9D74 /* NearbyViewController.swift in Sources */,
+				24F32CDA1EE2CB37001B894A /* Runner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EDBEDB1EE0EF1B007C9D74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EDBEE41EE0EF1B007C9D74 /* AirTaskerChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24EDBEE61EE0EF1B007C9D74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24EDBEEF1EE0EF1B007C9D74 /* AirTaskerChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24EDBEE11EE0EF1B007C9D74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24EDBECA1EE0EF1B007C9D74 /* AirTaskerChallenge */;
+			targetProxy = 24EDBEE01EE0EF1B007C9D74 /* PBXContainerItemProxy */;
+		};
+		24EDBEEC1EE0EF1B007C9D74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24EDBECA1EE0EF1B007C9D74 /* AirTaskerChallenge */;
+			targetProxy = 24EDBEEB1EE0EF1B007C9D74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24EDBED21EE0EF1B007C9D74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24EDBED31EE0EF1B007C9D74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24EDBED71EE0EF1B007C9D74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24EDBED81EE0EF1B007C9D74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24EDBEF11EE0EF1B007C9D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24EDBEF21EE0EF1B007C9D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24EDBEF41EE0EF1B007C9D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 868EAF51E79ADD863B88C7C1 /* Pods-AirTaskerChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JFT62W5LA3;
+				INFOPLIST_FILE = AirTaskerChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripGo.AirTaskerChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		24EDBEF51EE0EF1B007C9D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C95FE5E8F34AA6FA2D5E7AA /* Pods-AirTaskerChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JFT62W5LA3;
+				INFOPLIST_FILE = AirTaskerChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripGo.AirTaskerChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		24EDBEF71EE0EF1B007C9D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AirTaskerChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripGo.AirTaskerChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirTaskerChallenge.app/AirTaskerChallenge";
+			};
+			name = Debug;
+		};
+		24EDBEF81EE0EF1B007C9D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AirTaskerChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripGo.AirTaskerChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirTaskerChallenge.app/AirTaskerChallenge";
+			};
+			name = Release;
+		};
+		24EDBEFA1EE0EF1B007C9D74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AirTaskerChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripGo.AirTaskerChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AirTaskerChallenge;
+			};
+			name = Debug;
+		};
+		24EDBEFB1EE0EF1B007C9D74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AirTaskerChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripGo.AirTaskerChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AirTaskerChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24EDBEC61EE0EF1B007C9D74 /* Build configuration list for PBXProject "AirTaskerChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EDBEF11EE0EF1B007C9D74 /* Debug */,
+				24EDBEF21EE0EF1B007C9D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EDBEF31EE0EF1B007C9D74 /* Build configuration list for PBXNativeTarget "AirTaskerChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EDBEF41EE0EF1B007C9D74 /* Debug */,
+				24EDBEF51EE0EF1B007C9D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EDBEF61EE0EF1B007C9D74 /* Build configuration list for PBXNativeTarget "AirTaskerChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EDBEF71EE0EF1B007C9D74 /* Debug */,
+				24EDBEF81EE0EF1B007C9D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24EDBEF91EE0EF1B007C9D74 /* Build configuration list for PBXNativeTarget "AirTaskerChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24EDBEFA1EE0EF1B007C9D74 /* Debug */,
+				24EDBEFB1EE0EF1B007C9D74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24EDBEC31EE0EF1B007C9D74 /* Project object */;
+}

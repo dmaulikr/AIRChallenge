@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="khv-3i-vbD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Locations-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LocationViewController" customModule="AirTaskerChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wP7-Iu-EJx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wP7-Iu-EJx" secondAttribute="trailing" id="4WJ-Hg-Rnd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wP7-Iu-EJx" secondAttribute="bottom" id="Hau-FZ-tTY"/>
+                            <constraint firstItem="wP7-Iu-EJx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OmZ-75-Pfl"/>
+                            <constraint firstItem="wP7-Iu-EJx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="abH-86-MR0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Locations" id="ikT-Q4-abU"/>
+                    <connections>
+                        <outlet property="tableView" destination="wP7-Iu-EJx" id="dfq-ZK-Dfa"/>
+                        <segue destination="p4f-70-VDM" kind="show" identifier="showNearby" id="3Fr-2i-tSY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-556" y="1405.5472263868066"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="I7q-42-D1y">
+            <objects>
+                <navigationController id="khv-3i-vbD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tea-Zg-mpO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ccl-Wv-q4S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t0w-Kk-jmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1425" y="1406"/>
+        </scene>
+        <!--Nearby-->
+        <scene sceneID="gvs-u3-lzS">
+            <objects>
+                <viewController id="p4f-70-VDM" customClass="NearbyViewController" customModule="AirTaskerChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Www-OH-NG1"/>
+                        <viewControllerLayoutGuide type="bottom" id="qDc-O8-BMf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ma5-AX-S3W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WGr-Dj-v77">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DZ7-kb-fg7">
+                                <rect key="frame" x="0.0" y="274" width="375" height="393"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yNp-RO-AQV">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DZ7-kb-fg7" firstAttribute="top" secondItem="WGr-Dj-v77" secondAttribute="bottom" constant="10" id="2FK-zv-UEM"/>
+                            <constraint firstAttribute="trailing" secondItem="DZ7-kb-fg7" secondAttribute="trailing" id="8t0-yE-1Gv"/>
+                            <constraint firstItem="WGr-Dj-v77" firstAttribute="leading" secondItem="ma5-AX-S3W" secondAttribute="leading" id="9Pg-0f-d4j"/>
+                            <constraint firstItem="yNp-RO-AQV" firstAttribute="centerY" secondItem="ma5-AX-S3W" secondAttribute="centerY" id="Be0-6w-bOE"/>
+                            <constraint firstItem="qDc-O8-BMf" firstAttribute="top" secondItem="DZ7-kb-fg7" secondAttribute="bottom" id="NJR-Q3-1fr"/>
+                            <constraint firstItem="yNp-RO-AQV" firstAttribute="centerX" secondItem="ma5-AX-S3W" secondAttribute="centerX" id="O9t-Bd-C0G"/>
+                            <constraint firstItem="DZ7-kb-fg7" firstAttribute="leading" secondItem="ma5-AX-S3W" secondAttribute="leading" id="UHL-Yr-fGq"/>
+                            <constraint firstItem="WGr-Dj-v77" firstAttribute="height" secondItem="ma5-AX-S3W" secondAttribute="height" multiplier="0.3" id="VOz-g7-mXv"/>
+                            <constraint firstItem="WGr-Dj-v77" firstAttribute="top" secondItem="Www-OH-NG1" secondAttribute="bottom" id="iEI-0Y-0Wk"/>
+                            <constraint firstAttribute="trailing" secondItem="WGr-Dj-v77" secondAttribute="trailing" id="njy-vG-uzp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nearby" id="ie6-EW-mvu"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="yNp-RO-AQV" id="FtW-kn-rYr"/>
+                        <outlet property="mapView" destination="WGr-Dj-v77" id="DU0-YX-BeL"/>
+                        <outlet property="tableView" destination="DZ7-kb-fg7" id="ZBw-ky-Dxs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5XE-u2-2aa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229.59999999999999" y="1405.5472263868066"/>
+        </scene>
+    </scenes>
+</document>
